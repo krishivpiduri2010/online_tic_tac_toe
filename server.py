@@ -27,4 +27,5 @@ def threaded_client(client:socket.socket):
 
 while True:
     client,addr=s.accept()
+    print(f'[NEW_CONNECTION] {addr} connected')
     _thread.start_new_thread(threaded_client,(client,))
