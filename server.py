@@ -15,6 +15,7 @@ client_id=0
 
 def threaded_client(client:socket.socket):
     global client_id
+    client_id+=1
     client.send(str(client_id).encode())
     while True:
         try:

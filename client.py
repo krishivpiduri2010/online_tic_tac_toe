@@ -18,4 +18,5 @@ class Network:
         self.client.send(data.encode())
         return self.client.recv(2048).decode()
 n=Network()
-
+while True:
+    pass
